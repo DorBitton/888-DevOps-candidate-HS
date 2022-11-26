@@ -1,6 +1,5 @@
 # 888-DevOps-candidate-HS
 
-# 888-DevOps-candidate-HS
 This is the hiring assignment for Devops candidates at 888\Sparkware. It’s intended to mimic work you might do here, while giving us an understanding of your skills in: 
 
   - Windows System Administration
