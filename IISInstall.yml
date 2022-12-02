@@ -13,3 +13,10 @@
      win_copy:
        src: "Index.html"
        dest: "C:\\inetpub\\wwwroot\\ansible.html"
+   - name: Add a HTTPS binding
+     community.windows.win_iis_webbinding:
+       name: Default Web Site
+       protocol: https
+       port: 443
+       ssl certificate: SelfSigned
+       state: present
