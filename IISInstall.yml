@@ -1,3 +1,4 @@
+
 ---
 - name: Install IIS
   hosts: all
@@ -18,5 +19,11 @@
        name: Default Web Site
        protocol: https
        port: 443
-       ssl certificate: SelfSigned
+       certificate_hash:
        state: present
+   - name: Install DNS Server
+     win_feature:
+       name: "DNS"
+       state: present
+       include_management_tools: yes
+       include_sub_features: yes
