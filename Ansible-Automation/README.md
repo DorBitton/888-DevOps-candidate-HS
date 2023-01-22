@@ -5,9 +5,9 @@
   I've created an EC2 instance from AWS so I can access from multiple devices.(with the right security group to allow outside connection)
   And a VMware Linux Ubuntu machine as the playbook runner. 
  
- We will add Ansible user
+   Add Ansible user:
  <img src="https://i.ibb.co/0nfw4Z8/computer-manag.jpg" alt="Terminal">
-  We will add the user to the Administrator group
+   Add the user to the Administrator group:
  <img src="https://i.ibb.co/hXG0WLQ/ansible-add.jpg" alt="Terminal">
 
  Configure Windows Servers to Manage: Run the script in the PowerShell.
