@@ -93,13 +93,33 @@ We can either Edit the content, or copy the .html files from Ubuntu to Windows s
 ```
  Run Playbook:
  
+<img src="https://i.ibb.co/wgP2cDB/Screenshot-from-2023-01-22-20-02-10.png" alt="Terminal">
+
 
 
 * Create a self-signed certificate and bind it to the site you created in the previous bullet on port 443
 
+Create certificate:
+```
+openssl req -newkey rsa:4096 -x509 -sha256 -days 365 -nodes -out example.crt -keyout example.key
+```
+Add HTTPS binding to playbook:
 
-      
-      
+```
+   - name: Add a HTTPS binding
+     community.windows.win_iis_webbinding:
+       name: Default Web Site
+       certificate_store_name: "/home/ansible/"
+       protocol: https
+       port: 443
+       ip: 172.16.0.4
+       state: present
+```
+ Run:
+ 
+<img src="https://i.ibb.co/hYpgb4Z/Screenshot-from-2023-01-22-20-10-05.png" alt="Terminal">
+
+ 
       
 * Install dns service and create new zone(you can choose any domain name that you want)
   - Add a record to point the local web server you created, also make sure to create a record to perform dns reverse lookup
