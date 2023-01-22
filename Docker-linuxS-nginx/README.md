@@ -6,6 +6,8 @@
 - Upload your docker script to your Git repo
 
 
+Created a Dockerfile:
+
 ```
 FROM ubuntu:latest
 
@@ -19,12 +21,18 @@ EXPOSE 8080
 
 CMD ["nginx"]
 
+```
+Build the image:
+
+```
 #docker build -t my-nginx-image .
 
 ```
+Run and Shell into the docker file to change the default port to 8080:
 
 ```
 #docker run -it --name 888nginx my-nginx-image /bin/bash
 ```
+Port change:
 
- <img src="https://i.ibb.co/VqMDwhq/Screenshot-from-2023-01-23-01-39-13.png" alt="Terminal">
+<img src="https://i.ibb.co/VqMDwhq/Screenshot-from-2023-01-23-01-39-13.png" alt="Terminal">
