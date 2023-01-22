@@ -39,6 +39,7 @@ winrm set winrm/config/service/auth '@{Basic="true"}'
 ```
 
  Check the connection: 
+ 
 <img src="https://i.ibb.co/r0F425P/Screenshot-from-2023-01-19-05-00-33.png" alt="Terminal">
 
   
