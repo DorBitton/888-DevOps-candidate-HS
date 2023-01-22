@@ -5,6 +5,11 @@
   I've created an EC2 instance from AWS so I can access from multiple devices.(with the right security group to allow outside connection)
   And a VMware Linux Ubuntu machine as the playbook runner. 
   
+<img src="" alt="Terminal">
+<img src="" alt="Terminal">
+<img src="" alt="Terminal">
+
+  
   - Write Ansible playbook to execute the following, and upload it to your git repo:
       * Install IIS and create a site which serves HTML page with "Hello World"
 
@@ -53,11 +58,13 @@ We can either Edit the content, or copy the .html files from Ubuntu to Windows s
         dest: "C:\inetpub\wwwroot\HelloWorld\index.html"
 
 ```
+* Create a self-signed certificate and bind it to the site you created in the previous bullet on port 443
 
-      * Create a self-signed certificate and bind it to the site you created in the previous bullet on port 443
+
       
       
-      * Install dns service and create new zone(you can choose any domain name that you want)
+      
+* Install dns service and create new zone(you can choose any domain name that you want)
   - Add a record to point the local web server you created, also make sure to create a record to perform dns reverse lookup
   - Add a small exe file or a an image to the web site you created and download it via HTTP(not via HTTPS). Record(sniff) the download session into a pcap file.
   - Filter the download session from the pcap file and create a screenshot, describe the communication steps steps in the session
