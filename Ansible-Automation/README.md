@@ -137,5 +137,16 @@ Add HTTPS binding to playbook:
 
 
   - Add a record to point the local web server you created, also make sure to create a record to perform dns reverse lookup
+  
+  
   - Add a small exe file or a an image to the web site you created and download it via HTTP(not via HTTPS). Record(sniff) the download session into a pcap file.
   - Filter the download session from the pcap file and create a screenshot, describe the communication steps steps in the session
+
+Enter website from mobile device:
+
+<img src="https://i.ibb.co/VgpCWBg/Whats-App-Image-2023-01-23-at-00-38-05.jpg" alt="Terminal"> <img src="https://i.ibb.co/PMKYdrs/Whats-App-Image-2023-01-23-at-00-38-05-1.jpg" alt="Terminal">
+
+capture traffic with WireShark: filter by mobile device IP:
+
+<img src="https://i.ibb.co/hHdDQCw/Screenshot-from-2023-01-23-00-40-37.png" alt="Terminal">
+
