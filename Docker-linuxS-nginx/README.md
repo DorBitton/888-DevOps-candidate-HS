@@ -36,11 +36,3 @@ Run and Shell into the docker file to change the default port to 8080:
 Port change:
 
 <img src="https://i.ibb.co/VqMDwhq/Screenshot-from-2023-01-23-01-39-13.png" alt="Terminal">
-
-nginx site is loding while running in the container:
-
-
-<img src="https://i.ibb.co/7Wk95kZ/Screenshot-from-2023-01-23-01-52-10.png" alt="Terminal">
-
-
-
