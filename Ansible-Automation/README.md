@@ -7,6 +7,7 @@
  
    Add Ansible user:
  <img src="https://i.ibb.co/0nfw4Z8/computer-manag.jpg" alt="Terminal">
+ 
    Add the user to the Administrator group:
  <img src="https://i.ibb.co/hXG0WLQ/ansible-add.jpg" alt="Terminal">
 
