@@ -131,7 +131,7 @@ Add HTTPS binding to playbook:
          state: present
 
  ```
- Runhttps://i.ibb.co/rdsdBmd/Screenshot-from-2023-01-22-20-19-53.pnghttps://i.ibb.co/rdsdBmd/Screenshot-from-2023-01-22-20-19-53.png:
+ Run:
  
 <img src="https://i.ibb.co/rdsdBmd/Screenshot-from-2023-01-22-20-19-53.png" alt="Terminal">
 
