@@ -6,9 +6,9 @@
   And a VMware Linux Ubuntu machine as the playbook runner. 
  
  We will add Ansible user
-<img src="https://i.ibb.co/0nfw4Z8/computer-manag.jpg" alt="Terminal">
- We will add the user to the Administrator group
-<img src="https://i.ibb.co/hXG0WLQ/ansible-add.jpg" alt="Terminal">
+ <img src="https://i.ibb.co/0nfw4Z8/computer-manag.jpg" alt="Terminal">
+  We will add the user to the Administrator group
+ <img src="https://i.ibb.co/hXG0WLQ/ansible-add.jpg" alt="Terminal">
 
  Configure Windows Servers to Manage: Run the script in the PowerShell.
  
@@ -36,8 +36,9 @@ winrm set winrm/config/service '@{AllowUnencrypted="true"}'
 winrm set winrm/config/service/auth '@{Basic="true"}'
 
 ```
+
  Check the connection: 
- <img src="https://i.ibb.co/r0F425P/Screenshot-from-2023-01-19-05-00-33.png" alt="Terminal">
+<img src="https://i.ibb.co/r0F425P/Screenshot-from-2023-01-19-05-00-33.png" alt="Terminal">
 
   
   - Write Ansible playbook to execute the following, and upload it to your git repo:
