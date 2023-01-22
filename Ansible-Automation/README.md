@@ -7,8 +7,38 @@
  
  We will add Ansible user
 <img src="https://i.ibb.co/0nfw4Z8/computer-manag.jpg" alt="Terminal">
-We will add the user to the Administrator group
+ We will add the user to the Administrator group
 <img src="https://i.ibb.co/hXG0WLQ/ansible-add.jpg" alt="Terminal">
+
+ Configure Windows Servers to Manage:
+ Now we will run the following commands on PowerShell:
+ ```
+$url = "https://raw.githubusercontent.com/jborean93/ansible-windows/master/scripts/Upgrade-PowerShell.ps1"
+$file = "$env:temp\Upgrade-PowerShell.ps1"
+$username = "ansible"
+$password = "ansible"
+(New-Object -TypeName System.Net.WebClient).DownloadFile($url, $file)
+Set-ExecutionPolicy -ExecutionPolicy Unrestricted -Force
+&$file -Version 5.1 -Username $username -Password $password -Verbose
+ ```
+ To configure WinRM on a Windows system with ansible, a remote configuration script has been provided by ansible. Run the script in the PowerShell.
+
+ ```
+$url = "https://raw.githubusercontent.com/ansible/ansible/devel/examples/scripts/ConfigureRemotingForAnsible.ps1"
+$file = "$env:temp\ConfigureRemotingForAnsible.ps1"
+(New-Object -TypeName System.Net.WebClient).DownloadFile($url, $file)
+powershell.exe -ExecutionPolicy ByPass -File $file
+winrm enumerate winrm/config/Listener
+ ```
+ Set winrm to allow HTTP traffic & Set the authentication to basic in wirm.
+```
+winrm set winrm/config/service '@{AllowUnencrypted="true"}'
+winrm set winrm/config/service/auth '@{Basic="true"}'
+
+```
+
+
+ Now lets check the connection: 
 <img src="https://i.ibb.co/r0F425P/Screenshot-from-2023-01-19-05-00-33.png" alt="Terminal">
 
   
