@@ -10,8 +10,8 @@
  We will add the user to the Administrator group
 <img src="https://i.ibb.co/hXG0WLQ/ansible-add.jpg" alt="Terminal">
 
- Configure Windows Servers to Manage:
- Now we will run the following commands on PowerShell:
+ Configure Windows Servers to Manage: Run the script in the PowerShell.
+ 
  ```
 $url = "https://raw.githubusercontent.com/jborean93/ansible-windows/master/scripts/Upgrade-PowerShell.ps1"
 $file = "$env:temp\Upgrade-PowerShell.ps1"
@@ -22,7 +22,7 @@ Set-ExecutionPolicy -ExecutionPolicy Unrestricted -Force
 &$file -Version 5.1 -Username $username -Password $password -Verbose
  ```
  To configure WinRM on a Windows system with ansible, a remote configuration script has been provided by ansible. Run the script in the PowerShell.
-
+ 
  ```
 $url = "https://raw.githubusercontent.com/ansible/ansible/devel/examples/scripts/ConfigureRemotingForAnsible.ps1"
 $file = "$env:temp\ConfigureRemotingForAnsible.ps1"
@@ -36,10 +36,8 @@ winrm set winrm/config/service '@{AllowUnencrypted="true"}'
 winrm set winrm/config/service/auth '@{Basic="true"}'
 
 ```
-
-
- Now lets check the connection: 
-<img src="https://i.ibb.co/r0F425P/Screenshot-from-2023-01-19-05-00-33.png" alt="Terminal">
+ Check the connection: 
+ <img src="https://i.ibb.co/r0F425P/Screenshot-from-2023-01-19-05-00-33.png" alt="Terminal">
 
   
   - Write Ansible playbook to execute the following, and upload it to your git repo:
