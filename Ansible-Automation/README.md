@@ -91,6 +91,10 @@ We can either Edit the content, or copy the .html files from Ubuntu to Windows s
         dest: "C:\inetpub\wwwroot\HelloWorld\index.html"
 
 ```
+ Run Playbook:
+ 
+
+
 * Create a self-signed certificate and bind it to the site you created in the previous bullet on port 443
 
 
