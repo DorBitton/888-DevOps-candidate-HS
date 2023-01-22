@@ -36,6 +36,9 @@
         state: touch
         become: yes
         become_method: runas
+```
+We can either Edit the content, or copy the .html files from Ubuntu to Windows server:
+```
     - name: Add content to HTML page
       win_file:
         path: C:\inetpub\wwwroot\HelloWorld\index.html
@@ -43,10 +46,17 @@
         become: yes
         become_method: runas
 ```
+```
+    - name: Copy HTML page to Windows
+      win_copy:
+        src: /home/ansible/index.html
+        dest: "C:\inetpub\wwwroot\HelloWorld\index.html"
 
-      
-      
+```
+
       * Create a self-signed certificate and bind it to the site you created in the previous bullet on port 443
+      
+      
       * Install dns service and create new zone(you can choose any domain name that you want)
   - Add a record to point the local web server you created, also make sure to create a record to perform dns reverse lookup
   - Add a small exe file or a an image to the web site you created and download it via HTTP(not via HTTPS). Record(sniff) the download session into a pcap file.
