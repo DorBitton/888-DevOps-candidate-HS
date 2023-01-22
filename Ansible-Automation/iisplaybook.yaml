@@ -1,0 +1,44 @@
+- name: Install IIS and create site 
+  hosts: all 
+  tasks:
+    - name: Install IIS
+      win_feature:
+        name: Web-Server
+        state: present
+        become: yes
+    - name: Create Folder for site
+      win_file:
+        path: C:\inetpub\wwwroot\HelloWorld
+        state: directory
+    - name: Create IIS site
+      win_iis_website:
+        name: HelloWorld
+        state: started
+        physical_path: C:\inetpub\wwwroot\HelloWorld
+        become: yes
+        become_method: runas
+    - name: Create HTML page for site
+      win_file:
+        path: C:\inetpub\wwwroot\HelloWorld\index.html
+        state: touch
+        become: yes
+        become_method: runas
+    - name: Add content to HTML page
+      win_file:
+        path: C:\inetpub\wwwroot\HelloWorld\index.html
+        content: "Hello World"
+        become: yes
+        become_method: runas
+    - name: Add a HTTPS binding
+      community.windows.win_iis_webbinding:
+        name: Default Web Site
+        certificate_store_name: "/home/ansible/"
+        protocol: https
+        port: 443
+        ip: 172.16.0.4
+        state: present
+    - name: Install DNS
+      win_feature:
+        name: DNS
+        state: present
+
