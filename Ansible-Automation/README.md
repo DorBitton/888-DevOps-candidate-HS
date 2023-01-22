@@ -112,7 +112,7 @@ Add HTTPS binding to playbook:
        certificate_store_name: "/home/ansible/"
        protocol: https
        port: 443
-       ip: 172.16.0.4
+       ip: 
        state: present
 ```
  Run:
