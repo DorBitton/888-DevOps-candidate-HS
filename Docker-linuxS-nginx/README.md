@@ -24,7 +24,7 @@ CMD ["nginx"]
 ```
 
 ```
-# docker run -it --name 888nginx my-nginx-image /bin/bash
+#docker run -it --name 888nginx my-nginx-image /bin/bash
 ```
 
  <img src="https://i.ibb.co/VqMDwhq/Screenshot-from-2023-01-23-01-39-13.png" alt="Terminal">
