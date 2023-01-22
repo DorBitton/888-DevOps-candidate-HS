@@ -144,7 +144,9 @@ Add HTTPS binding to playbook:
 
 Enter website from mobile device:
 
-<img src="https://i.ibb.co/VgpCWBg/Whats-App-Image-2023-01-23-at-00-38-05.jpg" alt="Terminal"> <img src="https://i.ibb.co/PMKYdrs/Whats-App-Image-2023-01-23-at-00-38-05-1.jpg" alt="Terminal">
+<img src="https://i.ibb.co/VgpCWBg/Whats-App-Image-2023-01-23-at-00-38-05.jpg" alt="Terminal" width="400" 
+     height="500" > <img src="https://i.ibb.co/PMKYdrs/Whats-App-Image-2023-01-23-at-00-38-05-1.jpg" alt="Terminal" width="400" 
+     height="500">
 
 capture traffic with WireShark: filter by mobile device IP:
 
