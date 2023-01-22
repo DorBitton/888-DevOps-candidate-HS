@@ -122,6 +122,19 @@ Add HTTPS binding to playbook:
  
       
 * Install dns service and create new zone(you can choose any domain name that you want)
+ Add DNS install feature:
+ 
+ ```
+     - name: Install DNS
+       win_feature:
+         name: DNS
+         state: present
+
+ ```
+ Run playbook:
+<img src="https://i.ibb.co/rdsdBmd/Screenshot-from-2023-01-22-20-19-53.png" alt="Terminal">
+
+
   - Add a record to point the local web server you created, also make sure to create a record to perform dns reverse lookup
   - Add a small exe file or a an image to the web site you created and download it via HTTP(not via HTTPS). Record(sniff) the download session into a pcap file.
   - Filter the download session from the pcap file and create a screenshot, describe the communication steps steps in the session
