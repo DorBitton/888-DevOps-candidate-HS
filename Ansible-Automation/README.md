@@ -40,7 +40,7 @@ winrm set winrm/config/service/auth '@{Basic="true"}'
 
  Check the connection: 
  
-<img src="https://i.ibb.co/r0F425P/Screenshot-from-2023-01-19-05-00-33.png" alt="Terminal">
+<img src="https://github.com/DorBitton/888-DevOps-candidate-HS/blob/main/Ansible-Automation/Images/68747470733a2f2f692e6962622e636f2f723046343235502f53637265656e73686f742d66726f6d2d323032332d30312d31392d30352d30302d33332e706e67.png?raw=true" alt="Terminal">
 
   
   - Write Ansible playbook to execute the following, and upload it to your git repo:
@@ -93,7 +93,7 @@ We can either Edit the content, or copy the .html files from Ubuntu to Windows s
 ```
  Run Playbook:
  
-<img src="https://i.ibb.co/wgP2cDB/Screenshot-from-2023-01-22-20-02-10.png" alt="Terminal">
+<img src="https://github.com/DorBitton/888-DevOps-candidate-HS/blob/main/Ansible-Automation/Images/68747470733a2f2f692e6962622e636f2f776750326344422f53637265656e73686f742d66726f6d2d323032332d30312d32322d32302d30322d31302e706e67.png?raw=true" alt="Terminal">
 
 
 
@@ -117,7 +117,7 @@ Add HTTPS binding to playbook:
 ```
  Run:
  
-<img src="https://i.ibb.co/hYpgb4Z/Screenshot-from-2023-01-22-20-10-05.png" alt="Terminal">
+<img src="https://github.com/DorBitton/888-DevOps-candidate-HS/blob/main/Ansible-Automation/Images/68747470733a2f2f692e6962622e636f2f6859706762345a2f53637265656e73686f742d66726f6d2d323032332d30312d32322d32302d31302d30352e706e67.png?raw=true" alt="Terminal">
 
  
       
@@ -133,7 +133,7 @@ Add HTTPS binding to playbook:
  ```
  Run:
  
-<img src="https://i.ibb.co/rdsdBmd/Screenshot-from-2023-01-22-20-19-53.png" alt="Terminal">
+<img src="https://github.com/DorBitton/888-DevOps-candidate-HS/blob/main/Ansible-Automation/Images/68747470733a2f2f692e6962622e636f2f72647364426d642f53637265656e73686f742d66726f6d2d323032332d30312d32322d32302d31392d35332e706e67.png?raw=true" alt="Terminal">
 
 
   - Add a record to point the local web server you created, also make sure to create a record to perform dns reverse lookup
@@ -144,11 +144,11 @@ Add HTTPS binding to playbook:
 
 Enter website from mobile device:
 
-<img src="https://i.ibb.co/VgpCWBg/Whats-App-Image-2023-01-23-at-00-38-05.jpg" alt="Terminal" width="400" 
-     height="500" > <img src="https://i.ibb.co/PMKYdrs/Whats-App-Image-2023-01-23-at-00-38-05-1.jpg" alt="Terminal" width="400" 
+<img src="https://github.com/DorBitton/888-DevOps-candidate-HS/blob/main/Ansible-Automation/Images/WhatsApp%20Image%202023-01-23%20at%2000.38.05.jpeg?raw=true" alt="Terminal" width="400" 
+     height="500" > <img src="https://github.com/DorBitton/888-DevOps-candidate-HS/blob/main/Ansible-Automation/Images/WhatsApp%20Image%202023-01-23%20at%2000.38.05(1).jpeg?raw=true" alt="Terminal" width="400" 
      height="500">
 
 capture traffic with WireShark: filter by mobile device IP:
 
-<img src="https://i.ibb.co/hHdDQCw/Screenshot-from-2023-01-23-00-40-37.png" alt="Terminal">
+<img src="https://github.com/DorBitton/888-DevOps-candidate-HS/blob/main/Ansible-Automation/Images/68747470733a2f2f692e6962622e636f2f684864445143772f53637265656e73686f742d66726f6d2d323032332d30312d32332d30302d34302d33372e706e67.png?raw=true" alt="Terminal">
 
