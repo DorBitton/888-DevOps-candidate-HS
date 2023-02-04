@@ -20,8 +20,7 @@ Running parameters:
 <img src="https://raw.githubusercontent.com/DorBitton/888-DevOps-candidate-HS/main/Scripting-DogAPI/Images/68747470733a2f2f692e6962622e636f2f344b434c347a592f53637265656e73686f742d66726f6d2d323032332d30312d32312d32322d32392d35392e706e67.png" alt="Terminal">
 
    
-   <img src="https://i.ibb.co/4KCL4zY/Screenshot-from-2023-01-21-22-29-59.png" alt="Terminal">
    
 Image downloaded using --image parameter:
-   <img src="https://i.ibb.co/F3krG02/Screenshot-from-2023-01-19-00-15-04.png" alt="FileDownloaded">
+   <img src="https://github.com/DorBitton/888-DevOps-candidate-HS/blob/main/Scripting-DogAPI/Images/68747470733a2f2f692e6962622e636f2f46336b724730322f53637265656e73686f742d66726f6d2d323032332d30312d31392d30302d31352d30342e706e67.png?raw=true" alt="FileDownloaded">
 
