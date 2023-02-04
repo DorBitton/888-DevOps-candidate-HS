@@ -6,10 +6,10 @@
   And a VMware Linux Ubuntu machine as the playbook runner. 
  
    Add Ansible user:
- <img src="https://i.ibb.co/0nfw4Z8/computer-manag.jpg" alt="Terminal">
+ <img src="https://github.com/DorBitton/888-DevOps-candidate-HS/blob/main/Ansible-Automation/Images/68747470733a2f2f692e6962622e636f2f306e6677345a382f636f6d70757465722d6d616e61672e6a7067.jpeg?raw=true" alt="Terminal">
  
    Add the user to the Administrator group:
- <img src="https://i.ibb.co/hXG0WLQ/ansible-add.jpg" alt="Terminal">
+ <img src="https://github.com/DorBitton/888-DevOps-candidate-HS/blob/main/Ansible-Automation/Images/68747470733a2f2f692e6962622e636f2f68584730574c512f616e7369626c652d6164642e6a7067.jpeg?raw=true" alt="Terminal">
 
  Configure Windows Servers to Manage: Run the script in the PowerShell.
  
