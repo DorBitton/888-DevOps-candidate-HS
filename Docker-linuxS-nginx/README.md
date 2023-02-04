@@ -35,4 +35,4 @@ Run and Shell into the docker file to change the default port to 8080:
 ```
 Port change:
 
-<img src="https://i.ibb.co/VqMDwhq/Screenshot-from-2023-01-23-01-39-13.png" alt="Terminal">
+<img src="https://github.com/DorBitton/888-DevOps-candidate-HS/blob/main/Docker-linuxS-nginx/Images/68747470733a2f2f692e6962622e636f2f56714d447768712f53637265656e73686f742d66726f6d2d323032332d30312d32332d30312d33392d31332e706e67.png?raw=true" alt="Terminal">
