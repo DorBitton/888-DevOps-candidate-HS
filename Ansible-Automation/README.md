@@ -148,8 +148,7 @@ Add HTTPS binding to playbook:
 
 Enter website from mobile device:
 
-<img src="https://github.com/DorBitton/888-DevOps-candidate-HS/blob/main/Ansible-Automation/Images/WhatsApp%20Image%202023-01-23%20at%2000.38.05.jpeg?raw=true" alt="Terminal" width="400" 
-     height="500" > <img src="https://github.com/DorBitton/888-DevOps-candidate-HS/blob/main/Ansible-Automation/Images/WhatsApp%20Image%202023-01-23%20at%2000.38.05(1).jpeg?raw=true" alt="Terminal" width="400" 
+<img src="https://github.com/DorBitton/888-DevOps-candidate-HS/blob/main/Ansible-Automation/Images/WhatsApp%20Image%202023-01-23%20at%2000.38.05(1).jpeg?raw=true" alt="Terminal" width="400" 
      height="500">
 
 capture traffic with WireShark: filter by mobile device IP:
