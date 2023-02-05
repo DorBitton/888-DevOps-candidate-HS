@@ -129,6 +129,10 @@ Add HTTPS binding to playbook:
        win_feature:
          name: DNS
          state: present
+     - name: Create domain
+       win_domain:
+         dns_domain_name: dors.domain
+         safe_mode_password: notSecure
 
  ```
  Run:
