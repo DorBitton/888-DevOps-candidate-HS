@@ -129,10 +129,10 @@ Add HTTPS binding to playbook:
        win_feature:
          name: DNS
          state: present
-     - name: Create domain
+     - name: Create new domain in a new forest on the target host
        win_domain:
          dns_domain_name: dors.domain
-         safe_mode_password: notSecure
+         safe_mode_password: 888holdings
 
  ```
  Run:
