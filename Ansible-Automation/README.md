@@ -154,5 +154,8 @@ Enter website from mobile device:
 
 capture traffic with WireShark: filter by mobile device IP:
 
-<img src="https://github.com/DorBitton/888-DevOps-candidate-HS/blob/main/Ansible-Automation/Images/68747470733a2f2f692e6962622e636f2f684864445143772f53637265656e73686f742d66726f6d2d323032332d30312d32332d30302d34302d33372e706e67.png?raw=true" alt="Terminal">
+<img src="https://github.com/DorBitton/888-DevOps-candidate-HS/blob/main/Ansible-Automation/Images/WireSharkCapturePhone.png?raw=true" alt="Terminal">
 
+Here we can see the file being requested and getting OK response. 
+As well as the SYN used to initaite and establish connection.
+and ACK to confirm it received the SYN requests, connection established. 
