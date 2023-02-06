@@ -17,7 +17,7 @@ while time.time() < end_time:
     date_time = time.strftime("%Y-%m-%d %H:%M:%S")
 
     # Check if the top process is running
-    top_running = pgrep.pgrep("gedit")
+    top_running = pgrep.pgrep("top")
     if len(top_running) >= 1:
         log_entry = [date_time, "Top is running"]
     else:
@@ -26,7 +26,7 @@ while time.time() < end_time:
             log_entry = [date_time, "We are under maintenance mode!"]
         else:
             # Start the top process
-            Popen("gedit")
+            Popen("top")
             log_entry = [date_time, "Top was started"]
 
         # Write log entry to file
