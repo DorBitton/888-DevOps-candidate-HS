@@ -45,7 +45,7 @@ To complete this assignment successfully, you'll need to perform all the tasks b
   When we want to start a maintenance, we need to create a file under /tmp/maintenance.txt
   When maintenance is done, file can be removed.
 
-First Part
+- First Part
 
    Please write a script to monitor the Top process.
 
@@ -61,12 +61,12 @@ First Part
 
    The script should run for 5 minutes and it should sample the process every 5 seconds.
 
-Second Part:
+- Second Part:
 
    Extract from the csv only the lines which have "We are under maintenance mode!" in them.
    Count & output the amount of lines extracted
 
-Bonus:
+- Bonus:
 
    Extract from the CSV all the lines where Top wasn't running and had to be opened.
    Show via some GUI all the relevant lines from the CSV.
