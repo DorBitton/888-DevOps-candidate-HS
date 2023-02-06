@@ -40,7 +40,7 @@ winrm set winrm/config/service/auth '@{Basic="true"}'
 
  Check the connection: 
  
-<img src="https://github.com/DorBitton/888-DevOps-candidate-HS/blob/main/Ansible-Automation/Images/68747470733a2f2f692e6962622e636f2f723046343235502f53637265656e73686f742d66726f6d2d323032332d30312d31392d30352d30302d33332e706e67.png?raw=true" alt="Terminal">
+<img src="https://github.com/DorBitton/888-DevOps-candidate-HS/blob/main/Ansible-Windows-Automation/Images/68747470733a2f2f692e6962622e636f2f723046343235502f53637265656e73686f742d66726f6d2d323032332d30312d31392d30352d30302d33332e706e67.png?raw=true" alt="Terminal">
 
   
   - Write Ansible playbook to execute the following, and upload it to your git repo:
