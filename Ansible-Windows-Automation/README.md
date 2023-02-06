@@ -6,10 +6,10 @@
   And a VMware Linux Ubuntu machine as the playbook runner. 
  
    Add Ansible user:
- <img src="https://github.com/DorBitton/888-DevOps-candidate-HS/blob/main/Ansible-Automation/Images/68747470733a2f2f692e6962622e636f2f306e6677345a382f636f6d70757465722d6d616e61672e6a7067.jpeg?raw=true" alt="Terminal">
+ <img src="https://github.com/DorBitton/888-DevOps-candidate-HS/blob/main/Ansible-Windows-Automation/Images/68747470733a2f2f692e6962622e636f2f306e6677345a382f636f6d70757465722d6d616e61672e6a7067.jpeg?raw=true" alt="Terminal">
  
    Add the user to the Administrator group:
- <img src="https://github.com/DorBitton/888-DevOps-candidate-HS/blob/main/Ansible-Automation/Images/68747470733a2f2f692e6962622e636f2f68584730574c512f616e7369626c652d6164642e6a7067.jpeg?raw=true" alt="Terminal">
+ <img src="https://github.com/DorBitton/888-DevOps-candidate-HS/blob/main/Ansible-Windows-Automation/Images/68747470733a2f2f692e6962622e636f2f68584730574c512f616e7369626c652d6164642e6a7067.jpeg?raw=true" alt="Terminal">
 
  Configure Windows Servers to Manage: Run the script in the PowerShell.
  
@@ -93,7 +93,7 @@ We can either Edit the content, or copy the .html files from Ubuntu to Windows s
 ```
  Run Playbook:
  
-<img src="https://github.com/DorBitton/888-DevOps-candidate-HS/blob/main/Ansible-Automation/Images/68747470733a2f2f692e6962622e636f2f776750326344422f53637265656e73686f742d66726f6d2d323032332d30312d32322d32302d30322d31302e706e67.png?raw=true" alt="Terminal">
+<img src="https://github.com/DorBitton/888-DevOps-candidate-HS/blob/main/Ansible-Windows-Automation/Images/68747470733a2f2f692e6962622e636f2f776750326344422f53637265656e73686f742d66726f6d2d323032332d30312d32322d32302d30322d31302e706e67.png?raw=true" alt="Terminal">
 
 * Bonus: Bonus: Create another file called default.html. Using Jinja, input into it the date_time (can be taken from ansible facts) and copy it to the root site on both machines.
 
@@ -110,9 +110,9 @@ We can either Edit the content, or copy the .html files from Ubuntu to Windows s
 ```
 Run PlayBook:
 
-<img src="https://github.com/DorBitton/888-DevOps-candidate-HS/blob/main/Ansible-Automation/Images/JinjaBonus.png?raw=true" alt="Terminal">
+<img src="https://github.com/DorBitton/888-DevOps-candidate-HS/blob/main/Ansible-Windows-Automation/Images/JinjaBonus.png?raw=true" alt="Terminal">
 
-<img src="https://github.com/DorBitton/888-DevOps-candidate-HS/blob/main/Ansible-Automation/Images/JinjaTimeStamp.png?raw=true" alt="Terminal">
+<img src="https://github.com/DorBitton/888-DevOps-candidate-HS/blob/main/Ansible-Windows-Automation/Images/JinjaTimeStamp.png?raw=true" alt="Terminal">
 
 
 
@@ -136,7 +136,7 @@ Add HTTPS binding to playbook:
 ```
  Run:
  
-<img src="https://github.com/DorBitton/888-DevOps-candidate-HS/blob/main/Ansible-Automation/Images/68747470733a2f2f692e6962622e636f2f6859706762345a2f53637265656e73686f742d66726f6d2d323032332d30312d32322d32302d31302d30352e706e67.png?raw=true" alt="Terminal">
+<img src="https://github.com/DorBitton/888-DevOps-candidate-HS/blob/main/Ansible-Windows-Automation/Images/68747470733a2f2f692e6962622e636f2f6859706762345a2f53637265656e73686f742d66726f6d2d323032332d30312d32322d32302d31302d30352e706e67.png?raw=true" alt="Terminal">
 
  
       
@@ -156,7 +156,7 @@ Add HTTPS binding to playbook:
  ```
  Run:
  
-<img src="https://github.com/DorBitton/888-DevOps-candidate-HS/blob/main/Ansible-Automation/Images/68747470733a2f2f692e6962622e636f2f72647364426d642f53637265656e73686f742d66726f6d2d323032332d30312d32322d32302d31392d35332e706e67.png?raw=true" alt="Terminal">
+<img src="https://github.com/DorBitton/888-DevOps-candidate-HS/blob/main/Ansible-Windows-Automation/Images/68747470733a2f2f692e6962622e636f2f72647364426d642f53637265656e73686f742d66726f6d2d323032332d30312d32322d32302d31392d35332e706e67.png?raw=true" alt="Terminal">
 
 
   - Add a record to point the local web server you created, also make sure to create a record to perform dns reverse lookup
@@ -167,12 +167,12 @@ Add HTTPS binding to playbook:
 
 Enter website from mobile device:
 
-<img src="https://github.com/DorBitton/888-DevOps-candidate-HS/blob/main/Ansible-Automation/Images/WhatsApp%20Image%202023-01-23%20at%2000.38.05(1).jpeg?raw=true" alt="Terminal" width="400" 
+<img src="https://github.com/DorBitton/888-DevOps-candidate-HS/blob/main/Ansible-Windows-Automation/Images/WhatsApp%20Image%202023-01-23%20at%2000.38.05(1).jpeg?raw=true" alt="Terminal" width="400" 
      height="500">
 
 capture traffic with WireShark: filter by mobile device IP:
 
-<img src="https://github.com/DorBitton/888-DevOps-candidate-HS/blob/main/Ansible-Automation/Images/WireSharkCapturePhone.png?raw=true" alt="Terminal">
+<img src="https://github.com/DorBitton/888-DevOps-candidate-HS/blob/main/Ansible-Windows-Automation/Images/WireSharkCapturePhone.png?raw=true" alt="Terminal">
 
 Here we can see the file being requested and getting OK response. 
 As well as the SYN used to initaite and establish connection.
