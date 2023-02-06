@@ -39,7 +39,7 @@ To complete this assignment successfully, you'll need to perform all the tasks b
      
    - upload the script to your git repo 
    
-## Scripting - Process
+## Scripting - Process Monitoring
 
  -	Top is the most important process on our system, and it must be running the whole time, unless we are under maintenance.
 -	When we want to start a maintenance, we need to create a file under /tmp/maintenance.txt
