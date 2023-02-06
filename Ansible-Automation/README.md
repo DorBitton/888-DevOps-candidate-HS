@@ -95,6 +95,22 @@ We can either Edit the content, or copy the .html files from Ubuntu to Windows s
  
 <img src="https://github.com/DorBitton/888-DevOps-candidate-HS/blob/main/Ansible-Automation/Images/68747470733a2f2f692e6962622e636f2f776750326344422f53637265656e73686f742d66726f6d2d323032332d30312d32322d32302d30322d31302e706e67.png?raw=true" alt="Terminal">
 
+* Bonus: Bonus: Create another file called default.html. Using Jinja, input into it the date_time (can be taken from ansible facts) and copy it to the root site on both machines.
+
+```
+- name: Jinja testing
+  hosts: all
+  tasks:  
+    - name: Push a new Index.html config file
+      template:
+        src: default.j2
+        dest: C:\inetpub\wwwroot\HelloWorld\index2.html
+        mode: 0775
+        
+```
+
+<img src="https://github.com/DorBitton/888-DevOps-candidate-HS/blob/main/Ansible-Automation/Images/JinjaTimeStamp.png?raw=true" alt="Terminal">
+
 
 
 * Create a self-signed certificate and bind it to the site you created in the previous bullet on port 443
