@@ -108,6 +108,9 @@ We can either Edit the content, or copy the .html files from Ubuntu to Windows s
         mode: 0775
         
 ```
+Run PlayBook:
+
+<img src="https://github.com/DorBitton/888-DevOps-candidate-HS/blob/main/Ansible-Automation/Images/JinjaBonus.png?raw=true" alt="Terminal">
 
 <img src="https://github.com/DorBitton/888-DevOps-candidate-HS/blob/main/Ansible-Automation/Images/JinjaTimeStamp.png?raw=true" alt="Terminal">
 
