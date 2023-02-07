@@ -27,3 +27,22 @@ Bonus:
 -	Extract from the CSV all the lines where Top wasn't running and had to be opened.
 -	Show via some GUI all the relevant lines from the CSV.
 -	Give the user an option to choose some lines and save them into a separate file.
+
+
+
+As an example I've changed the process to gedit ubuntu process:
+
+before running the code, gedit process is closed
+ <img src="https://github.com/DorBitton/888-DevOps-candidate-HS/blob/main/Scripting-Process-Monitoring/images/Screenshot%20from%202023-02-07%2002-39-11.png?raw=true" alt="Terminal">
+
+Script opened gedit process, and counting if maintanance file exists:
+ <img src="https://github.com/DorBitton/888-DevOps-candidate-HS/blob/main/Scripting-Process-Monitoring/images/Screenshot%20from%202023-02-07%2002-39-31.png?raw=true" alt="Terminal">
+
+GUI opened with 2 buttons:
+ <img src="https://github.com/DorBitton/888-DevOps-candidate-HS/blob/main/Scripting-Process-Monitoring/images/Screenshot%20from%202023-02-07%2002-39-48.png?raw=true" alt="Terminal">
+
+Clicking on show entries will show us when process started:
+ <img src="https://github.com/DorBitton/888-DevOps-candidate-HS/blob/main/Scripting-Process-Monitoring/images/Screenshot%20from%202023-02-07%2002-40-40.png?raw=true" alt="Terminal">
+
+We can save the number of times in a different file:
+ <img src="https://github.com/DorBitton/888-DevOps-candidate-HS/blob/main/Scripting-Process-Monitoring/images/Screenshot%20from%202023-02-07%2002-40-51.png?raw=true" alt="Terminal">
