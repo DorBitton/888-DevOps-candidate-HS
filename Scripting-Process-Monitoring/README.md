@@ -46,7 +46,7 @@ GUI opened with 2 buttons:
  <img src="https://github.com/DorBitton/888-DevOps-candidate-HS/blob/main/Scripting-Process-Monitoring/images/Screenshot%20from%202023-02-07%2002-39-48.png?raw=true" alt="Terminal">
 
 Clicking on show entries will show us when process started:
- <img src="https://github.com/DorBitton/888-DevOps-candidate-HS/blob/main/Scripting-Process-Monitoring/images/Screenshot%20from%202023-02-07%2002-40-40.png?raw=true" alt="Terminal">
+ <img src="https://github.com/DorBitton/888-DevOps-candidate-HS/blob/main/Scripting-Process-Monitoring/images/Screenshot%20from%202023-02-07%2006-01-15.png?raw=true" alt="Terminal">
 
 We can save the number of times in a different file:
  <img src="https://github.com/DorBitton/888-DevOps-candidate-HS/blob/main/Scripting-Process-Monitoring/images/Screenshot%20from%202023-02-07%2002-40-51.png?raw=true" alt="Terminal">
