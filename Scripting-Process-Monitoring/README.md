@@ -37,6 +37,9 @@ before running the code, gedit process is closed
 
 Script opened gedit process, and counting if maintanance file exists:
  <img src="https://github.com/DorBitton/888-DevOps-candidate-HS/blob/main/Scripting-Process-Monitoring/images/Screenshot%20from%202023-02-07%2002-39-31.png?raw=true" alt="Terminal">
+ 
+ Creating the csv file:
+ <img src="https://github.com/DorBitton/888-DevOps-candidate-HS/blob/main/Scripting-Process-Monitoring/images/Screenshot%20from%202023-02-07%2002-47-41.png?raw=true" alt="terminal">
 
 GUI opened with 2 buttons:
  <img src="https://github.com/DorBitton/888-DevOps-candidate-HS/blob/main/Scripting-Process-Monitoring/images/Screenshot%20from%202023-02-07%2002-39-48.png?raw=true" alt="Terminal">
