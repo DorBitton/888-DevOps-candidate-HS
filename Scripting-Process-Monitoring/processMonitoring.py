@@ -21,7 +21,7 @@ maintenance_file = "/tmp/maintenance.txt"
 
 
 # Loop for 5 minutes with 5 seconds interval
-end_time = time.time() + 300
+end_time = time.time() + 15
 while time.time() < end_time:
     date_time = time.strftime("%Y-%m-%d %H:%M:%S")
 
@@ -55,21 +55,7 @@ while time.time() < end_time:
     time.sleep(5)
 
 entries = []
-
-
-# Show the entries in a GUI
-def show_entries():
-    for entry in entries:
-        print(entry)
-
-
-def save_entries():
-    file_path = filedialog.asksaveasfilename(defaultextension=".csv")
-    with open(file_path, "w", newline="") as f:
-        writing = csv.writer(f)
-        writing.writerow(header)
-        writing.writerows(entries)
-
+lines = []
 
 with open(log_file) as f:
     reader = csv.reader(f)
@@ -78,6 +64,38 @@ with open(log_file) as f:
         if row[1] == "Top was started":
             entries.append(row)
 
+var = tkinter.Variable(value=entries)
+
+listbox = tkinter.Listbox(
+    root,
+    listvariable=var,
+    height=6,
+    selectmode=tkinter.EXTENDED
+)
+
+
+
+def items_selected(event):
+    # get all selected indices
+    selected_indices = listbox.curselection()
+
+    #get selected items
+    selected_lines = lines.append([listbox.get(i) for i in selected_indices])
+    print(lines)
+
+
+# Show the entries in a GUI
+def show_entries():
+    listbox.pack(expand=True, fill=tkinter.BOTH)
+
+
+def save_entries():
+    file_path = filedialog.asksaveasfilename()
+    with open(file_path, 'w') as f:
+        f.writelines(lines)
+
+
+listbox.bind('<<ListboxSelect>>', items_selected)
 
 show_button = tkinter.Button(master=root, text="Show entries", command=show_entries)
 show_button.pack(pady=12, padx=10)
