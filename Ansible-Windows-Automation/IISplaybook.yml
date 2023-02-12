@@ -1,11 +1,10 @@
 - name: Install IIS and create site 
-  hosts: all 
+  hosts: win 
   tasks:
     - name: Install IIS
       win_feature:
         name: Web-Server
         state: present
-        become: yes
     - name: Create Folder for site
       win_file:
         path: C:\inetpub\wwwroot\HelloWorld
@@ -15,27 +14,21 @@
         name: HelloWorld
         state: started
         physical_path: C:\inetpub\wwwroot\HelloWorld
-        become: yes
-        become_method: runas
     - name: Create HTML page for site
       win_file:
         path: C:\inetpub\wwwroot\HelloWorld\index.html
         state: touch
-        become: yes
-        become_method: runas
     - name: Add content to HTML page
       win_file:
         path: C:\inetpub\wwwroot\HelloWorld\index.html
         content: "Hello World"
-        become: yes
-        become_method: runas
     - name: Add a HTTPS binding
       community.windows.win_iis_webbinding:
-        name: Default Web Site
-        certificate_store_name: "/home/ansible/"
+        name: HelloWorld
+        certificate_store_name: "/home/Ansible/"
         protocol: https
         port: 443
-        ip: 
+        ip: 3.127.223.33
         state: present
     - name: Install DNS
       win_feature:
@@ -45,3 +38,12 @@
       win_domain:
         dns_domain_name: dors.domain
         safe_mode_password: notSecure
+    - name: Restart an application pool (non-idempotent)
+      community.windows.win_iis_webapppool:
+        name: HelloWorld
+        state: restarted
+    - name: Push a new Index.html config file
+      template:
+        src: index.j2
+        dest: C:\inetpub\wwwroot\HelloWorld\index2.html
+        mode: 0775
