@@ -21,7 +21,7 @@ maintenance_file = "/tmp/maintenance.txt"
 
 
 # Loop for 5 minutes with 5 seconds interval
-end_time = time.time() + 15
+end_time = time.time() + 300
 while time.time() < end_time:
     date_time = time.strftime("%Y-%m-%d %H:%M:%S")
 
