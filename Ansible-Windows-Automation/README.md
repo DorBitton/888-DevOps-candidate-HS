@@ -103,7 +103,7 @@ We can either Edit the content, or copy the .html files from Ubuntu to Windows s
   tasks:  
     - name: Push a new Index.html config file
       template:
-        src: default.j2
+        src: index.j2
         dest: C:\inetpub\wwwroot\HelloWorld\index2.html
         mode: 0775
         
